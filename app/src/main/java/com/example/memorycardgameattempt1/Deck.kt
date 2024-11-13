@@ -29,9 +29,6 @@ class Deck(val deck:List<Card>) {
     }
 //    Remove card
     fun dealCard(): Card {
-        if(cards.size ==0){
-           TODO("Add Error Code or Decide to finish Game")
-        }
         return cards.removeFirst()
     }
 }
