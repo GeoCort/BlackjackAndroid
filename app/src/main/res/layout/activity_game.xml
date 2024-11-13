@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dealerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dealers 2nd Card is:"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card_back"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:layout_toRightOf="@id/dealerText"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card_back"
+            android:id="@+id/viewCard"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:layout_toRightOf="@id/dealerText"
+            android:translationX="20dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardScore"
+        android:text="Score:"
+        android:textSize="30sp"
+        />
+    <Button
+        android:id="@+id/HitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIT ME"/>
+    <Button
+        android:id="@+id/gameOverBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash In"/>
+
+</LinearLayout>

@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/vert"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BlackJack : Vegas Came Home"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        />
 
-    <com.google.android.material.card.MaterialCardView
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingVertical="50dp"
+      >
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/cardCenter"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:cardCornerRadius="10dp"
+          >
+          <ImageView
+              android:id="@+id/cardView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:src="@drawable/card_back" />
+      </com.google.android.material.card.MaterialCardView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cardCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardCornerRadius="10dp"
-        >
-        <ImageView
-            android:id="@+id/cardView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/card_back"
-            />
-    </com.google.android.material.card.MaterialCardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+        android:text="Play Now"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>

@@ -1,7 +1,7 @@
 package com.example.memorycardgameattempt1
 
-data class Card(val suit:String, val value:String){
-//    get card value
+class Card(val suit:String, val value:String){
+    //    get card value
     fun getCardValue(): Int{
         return when (this.value) {
             "A" -> {
