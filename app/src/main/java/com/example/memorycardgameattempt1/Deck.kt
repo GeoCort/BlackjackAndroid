@@ -2,13 +2,13 @@ package com.example.memorycardgameattempt1
 
 class Deck() {
     //    Four types of Suits for cards
-    var suits : List<String> = listOf("Hearts","Diamonds", "Clubs", "Spades")
+    var suits : List<String> = listOf("hearts","diamonds", "clubs", "spades")
     //    Defined values that are available for a cards
     private val values = listOf("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
     private var cards : MutableList<Card> = mutableListOf<Card>()
     //    initialize a Deck object with cards
     init{
-        val suits : List<String> = listOf("Hearts","Diamonds", "Clubs", "Spades")
+        val suits : List<String> = listOf("hearts","diamonds", "clubs", "spades")
         //    Defined values that are available for a cards
         val values = listOf("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
         for(suit in suits){

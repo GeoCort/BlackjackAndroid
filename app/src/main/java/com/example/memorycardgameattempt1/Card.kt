@@ -1,5 +1,7 @@
 package com.example.memorycardgameattempt1
 
+import android.content.Context
+
 class Card(val suit:String, val value:String){
     //    get card value
     fun getCardValue(): Int{
@@ -15,4 +17,5 @@ class Card(val suit:String, val value:String){
                 this.value.toInt()
             }
         }
-}}
+    }
+}
